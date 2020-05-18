@@ -2,6 +2,7 @@
 
 Assets
 Master_UE4/Content/3DModels
+
 #For UE4
 
 Master_UE4/Binaries
@@ -26,18 +27,13 @@ Master_UE4/Content/StarterContent/
 
 #For Unity
 
-
-# This .gitignore file should be placed at the root of your Unity project directory
-#
-# Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
-#
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/[Ll]ogs/
-/[Mm]emoryCaptures/
+Master_Unity/[Ll]ibrary/
+Master_Unity/[Tt]emp/
+Master_Unity/[Oo]bj/
+Master_Unity/[Bb]uild/
+Master_Unity/[Bb]uilds/
+Master_Unity/[Ll]ogs/
+Master_Unity/[Mm]emoryCaptures/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
