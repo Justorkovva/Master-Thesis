@@ -1,3 +1,32 @@
+#For my assets (sorry)
+
+Assets
+Master_UE4/Content/3DModels
+#For UE4
+
+Master_UE4/Binaries
+Master_UE4/Build
+Master_UE4/DerivedDataCache
+Master_UE4/Intermediate
+Master_UE4/Saved
+Master_UE4/Content/StarterContent/
+*.VC.db
+*.opensdf
+*.opendb
+*.sdf
+*.sln
+*.suo
+*.xcodeproj
+*.xcworkspace
+.vs/
+.hg/
+*.pdb
+*.uasset.d
+*.csv
+
+#For Unity
+
+
 # This .gitignore file should be placed at the root of your Unity project directory
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
@@ -51,7 +80,8 @@ ExportedObj/
 # Unity3D generated file on crash reports
 sysinfo.txt
 
-# Builds
+
+
 *.apk
 *.unitypackage
 
