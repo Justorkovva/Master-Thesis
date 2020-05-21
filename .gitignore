@@ -1,7 +1,8 @@
 #For my assets (sorry)
 
-Assets
+BlenderAssets
 Master_UE4/Content/3DModels
+Master_Unity/Assets/MyAssets/3DModels
 
 #For UE4
 
@@ -34,6 +35,13 @@ Master_Unity/[Bb]uild/
 Master_Unity/[Bb]uilds/
 Master_Unity/[Ll]ogs/
 Master_Unity/[Mm]emoryCaptures/
+Master_Unity/Assets/ExampleAssets
+Master_Unity/Assets/ExampleAssets.meta
+Master_Unity/Assets/Presets
+Master_Unity/Assets/Presets.meta
+Master_Unity/Assets/Tutorial_info
+Master_Unity/Assets/Tutorial_info.meta
+
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
