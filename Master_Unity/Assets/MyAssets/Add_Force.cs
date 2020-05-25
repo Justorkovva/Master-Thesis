@@ -1,13 +1,22 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class Add_Force : MonoBehaviour
 {
-    public float thrust = 1.0f;
+    public float thrustX = 1.0f;
+    public float thrustY = 0.0f;
+    public float thrustZ = 0.0f;
     public Rigidbody rb;
 
     void Start()
     {
+        StartCoroutine(Wait());   
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSecondsRealtime(2);
         rb = GetComponent<Rigidbody>();
-        rb.AddForce(thrust, 0, 0, ForceMode.Impulse);
+        rb.AddForce(thrustX, thrustY, thrustZ, ForceMode.VelocityChange);
     }
 }
