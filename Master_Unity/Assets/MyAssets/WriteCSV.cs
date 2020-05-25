@@ -9,32 +9,26 @@ using System.Threading.Tasks;
 
 public class WriteCSV : MonoBehaviour
 {
+    public TextWriter data;
+    public Rigidbody rb;
+
     // Start is called before the first frame update
     void Start()
     {
-        
         // create file
-        TextWriter data = new StreamWriter("position_sym1.csv");
+        data = new StreamWriter("position_sym1.csv");
+        rb = GetComponent<Rigidbody>();
+        StartCoroutine(Wait());
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator Wait()
     {
-        string filepath = "position_sym1.csv";
-        try
+        for(int i = 0; i < 1000; i++)
         {
-            using (System.IO.StreamWriter file = new System.IO.StreamWriter(@filepath, true))
-            {
-                
-                file.WriteLine("c" + "," + "b");
-                file.Close();
-            }
+            yield return new WaitForSecondsRealtime(0.01f);
+            Vector3 pos = GetComponent<Rigidbody>().position;
+            data.WriteLine(pos[0]);
         }
-        catch(Exception ex)
-        {
-            throw new ApplicationException("something wrong with csv file",ex);
-        }
-        
-        //File.AppendAllText("position_sym1.csv", DateTime.Now.ToString());
+        data.Close();
     }
 }
