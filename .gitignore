@@ -7,6 +7,9 @@ Master_Unity/Assets/MyAssets/3DModels
 #for videos of simulation
 Video
 
+#For CSV data and EXCEL diagrams
+CSV
+
 #For UE4
 
 Master_UE4/Binaries
