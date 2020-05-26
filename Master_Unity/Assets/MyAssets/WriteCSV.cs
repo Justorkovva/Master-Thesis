@@ -30,7 +30,7 @@ public class WriteCSV : MonoBehaviour
         {
             yield return new WaitForSecondsRealtime(wait_time);
             Vector3 pos = GetComponent<Rigidbody>().position;
-            data.WriteLine(pos[0] + "," + pos[2]);
+            data.WriteLine(pos[0] + ";" + pos[2]);
         }
         data.Close();
     }
