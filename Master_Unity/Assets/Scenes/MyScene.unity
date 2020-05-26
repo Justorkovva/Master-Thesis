@@ -372,7 +372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6438a4ddb1f439d4e9677e64cb6ef5d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
+  filename: simulation_1.csv
 --- !u!1001 &411405793
 PrefabInstance:
   m_ObjectHideFlags: 0

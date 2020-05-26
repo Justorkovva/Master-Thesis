@@ -6,7 +6,7 @@ public class Add_Force : MonoBehaviour
     public float thrustX = 1.0f;
     public float thrustY = 0.0f;
     public float thrustZ = 0.0f;
-    public Rigidbody rb;
+    private Rigidbody rb;
 
     void Start()
     {

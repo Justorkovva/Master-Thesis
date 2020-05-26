@@ -3,31 +3,34 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 public class WriteCSV : MonoBehaviour
 {
-    public TextWriter data;
-    public Rigidbody rb;
+   
+    public string filename = "simulation_1.csv";
+    public float wait_time = 0.01f;
+    public float seconds = 10.0f;
+    private float iterations;
+    private TextWriter data;
+    private Rigidbody rb;
 
     // Start is called before the first frame update
     void Start()
     {
         // create file
-        data = new StreamWriter("position_sym1.csv");
+        iterations = 1 / wait_time * seconds;
+        data = new StreamWriter(filename);
         rb = GetComponent<Rigidbody>();
-        StartCoroutine(Wait());
+        StartCoroutine(Write_to_file());
     }
 
-    IEnumerator Wait()
+    IEnumerator Write_to_file()
     {
-        for(int i = 0; i < 1000; i++)
+        for(int i = 0; i < iterations; i++)
         {
-            yield return new WaitForSecondsRealtime(0.01f);
+            yield return new WaitForSecondsRealtime(wait_time);
             Vector3 pos = GetComponent<Rigidbody>().position;
-            data.WriteLine(pos[0]);
+            data.WriteLine(pos[0] + "," + pos[2]);
         }
         data.Close();
     }
