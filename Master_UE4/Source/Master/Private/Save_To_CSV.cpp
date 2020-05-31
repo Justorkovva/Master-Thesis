@@ -9,8 +9,8 @@ bool USave_To_CSV::SaveArray(FString SaveDirectory, FString Filename, TArray<FSt
 {
 	SaveDirectory += "\\";
 	SaveDirectory += Filename;
-
 	FString FinalString = "";
+
 	for (FString& Each : SaveText)
 	{
 		FinalString += Each;
