@@ -17,7 +17,6 @@ public class WriteCSV : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // create file
         iterations = 1 / wait_time * seconds;
         data = new StreamWriter(filename);
         rb = GetComponent<Rigidbody>();
