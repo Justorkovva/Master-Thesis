@@ -325,7 +325,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 0.16
   m_Drag: 0
-  m_AngularDrag: 0
+  m_AngularDrag: 1.5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -356,9 +356,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c5d5857a2d20aa46b6ed56fbef84c2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrustX: 2.47485
+  thrustX: 5
   thrustY: 0
-  thrustZ: 2.47485
+  thrustZ: 0
 --- !u!114 &280036914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -371,9 +371,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6438a4ddb1f439d4e9677e64cb6ef5d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  filename: simulation_2.csv
+  filename: simulation_3.csv
   wait_time: 0.01
-  seconds: 8
+  seconds: 3
 --- !u!1001 &411405793
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -575,17 +575,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: ce0b19930939d164090c99ee7a8ff316,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.1734002
+      value: 0.97
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: ce0b19930939d164090c99ee7a8ff316,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.01
+      value: 0.025
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: ce0b19930939d164090c99ee7a8ff316,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.0110002
+      value: 0.335
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: ce0b19930939d164090c99ee7a8ff316,
         type: 3}
@@ -975,7 +975,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: ce0b19930939d164090c99ee7a8ff316,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.67
+      value: 0.897
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: ce0b19930939d164090c99ee7a8ff316,
         type: 3}
@@ -985,7 +985,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: ce0b19930939d164090c99ee7a8ff316,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.035
+      value: 0.2945535
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: ce0b19930939d164090c99ee7a8ff316,
         type: 3}
@@ -1323,7 +1323,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 0.16
   m_Drag: 0
-  m_AngularDrag: 0
+  m_AngularDrag: 1.5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1728,7 +1728,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: ce0b19930939d164090c99ee7a8ff316,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.335
+      value: 2.693
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: ce0b19930939d164090c99ee7a8ff316,
         type: 3}
@@ -2061,7 +2061,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 0.16
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 1.5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -2080,6 +2080,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.009999999
   m_Center: {x: -0.0000000023283062, y: -0.000000006053596, z: 0}
+--- !u!114 &1638191668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638191662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6438a4ddb1f439d4e9677e64cb6ef5d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  filename: simulation_3_kolor.csv
+  wait_time: 0.01
+  seconds: 3
 --- !u!1001 &1730743380
 PrefabInstance:
   m_ObjectHideFlags: 0
