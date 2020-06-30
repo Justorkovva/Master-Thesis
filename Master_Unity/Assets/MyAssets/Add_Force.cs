@@ -15,7 +15,7 @@ public class Add_Force : MonoBehaviour
 
     IEnumerator Wait()
     {
-        yield return new WaitForSecondsRealtime(2);
+        yield return new WaitForSecondsRealtime(4);
         rb = GetComponent<Rigidbody>();
         rb.AddForce(thrustX, thrustY, thrustZ, ForceMode.VelocityChange);
     }
