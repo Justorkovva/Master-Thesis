@@ -42,5 +42,5 @@ You won't be able to run simulations, because the pooltable asset is not include
 I made this asset from scratch according to the WPA tournament specifications.
 
 
-If your interested in results of my work please contact my via e-mail I'll be happy to send you my thesis in PDF :) <br />
-Have a nice day!
+If your interested in results of my work please contact my via e-mail I'll be happy to send you my thesis in PDF <br />
+Have a nice day! :)
